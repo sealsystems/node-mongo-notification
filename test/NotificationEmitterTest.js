@@ -22,7 +22,7 @@ suite('NotificationEmitter', () => {
     database = await mongo.db(mongoUrl);
   });
 
-  suiteTeardown(async function() {
+  suiteTeardown(async function () {
     // drop may need far more that 2000 ms
     this.timeout(10000);
 
@@ -51,7 +51,7 @@ suite('NotificationEmitter', () => {
       .is.throwing('Collection is missing.');
   });
 
-  test('emits an event.', async function() {
+  test('emits an event.', async function () {
     this.timeout(5 * 1000);
 
     const notificationEmitter = new NotificationEmitter({ collection });
@@ -68,7 +68,7 @@ suite('NotificationEmitter', () => {
     });
   });
 
-  test('does not emit an event if opened writeOnly', async function() {
+  test('does not emit an event if opened writeOnly', async function () {
     this.timeout(5 * 1000);
 
     const notificationEmitter = new NotificationEmitter({ collection, writeOnly: true });
