@@ -47,7 +47,7 @@ suite('mongoNotification', () => {
     mongoUrl = `mongodb://localhost:27017/${uuidv4()}`;
   });
 
-  suiteTeardown(async function() {
+  suiteTeardown(async function () {
     this.timeout(10000);
 
     const db = await mongo.db(mongoUrl);
@@ -82,7 +82,7 @@ suite('mongoNotification', () => {
       .is.throwingAsync('Topic is missing.');
   });
 
-  test('returns an event emitter.', async function() {
+  test('returns an event emitter.', async function () {
     this.timeout(10 * 1000);
 
     const notificationEmitter = await mongoNotification({ url: mongoUrl, topic: uuidv4() });
