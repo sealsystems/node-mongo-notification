@@ -1,3 +1,10 @@
+## 1.5.22 (2022-02-08)
+
+### Chores
+
+
+bump [@sealsystems](https://github.com/sealsystems)/mongo from 3.1.4 to 3.1.5 ([a0feaa4](https://github.com/sealsystems/node-mongo-notification/commit/a0feaa4))
+
 ## 1.5.21 (2022-02-07)
 
 ### Chores
