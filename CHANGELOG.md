@@ -1,3 +1,10 @@
+## 1.5.23 (2022-02-08)
+
+### Chores
+
+
+update deps ([e1eb80e](https://github.com/sealsystems/node-mongo-notification/commit/e1eb80e))
+
 ## 1.5.22 (2022-02-08)
 
 ### Chores
